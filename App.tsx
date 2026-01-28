@@ -1,16 +1,16 @@
 
 import React from 'react';
-import Navigation from './components/Navigation';
-import Hero from './components/Hero';
-import About from './components/About';
-import Problem from './components/Problem';
-import Methodology from './components/Methodology';
-import Results from './components/Results';
-import Plans from './components/Plans';
-import BusinessModel from './components/BusinessModel';
-import Differentiators from './components/Differentiators';
-import FinalCTA from './components/FinalCTA';
-import Footer from './components/Footer';
+import Navigation from './components/Navigation.tsx';
+import Hero from './components/Hero.tsx';
+import About from './components/About.tsx';
+import Problem from './components/Problem.tsx';
+import Methodology from './components/Methodology.tsx';
+import Results from './components/Results.tsx';
+import Plans from './components/Plans.tsx';
+import BusinessModel from './components/BusinessModel.tsx';
+import Differentiators from './components/Differentiators.tsx';
+import FinalCTA from './components/FinalCTA.tsx';
+import Footer from './components/Footer.tsx';
 
 const App: React.FC = () => {
   return (

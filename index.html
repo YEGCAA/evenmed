@@ -13,7 +13,7 @@
         :root {
             --primary-blue: #1E88E5;
             --navy-blue: #003366;
-            --teal-green: #1E88E5; /* Alterado de teal para o azul principal conforme solicitado */
+            --teal-green: #1E88E5;
             --coral-cta: #FF6B35;
             --bg-presentation: #000000;
             --text-main: #FFFFFF;
@@ -23,6 +23,8 @@
             font-family: 'Inter', sans-serif;
             color: var(--text-main);
             background-color: var(--bg-presentation);
+            margin: 0;
+            padding: 0;
             overflow: hidden;
         }
 
@@ -50,10 +52,10 @@
 
         .bg-medical-navy { background-color: var(--navy-blue); }
         .bg-medical-blue { background-color: var(--primary-blue); }
-        .bg-medical-teal { background-color: var(--primary-blue); } /* Mapeado para azul */
+        .bg-medical-teal { background-color: var(--primary-blue); }
         .bg-medical-coral { background-color: var(--coral-cta); }
         .text-medical-blue { color: var(--primary-blue); }
-        .text-medical-teal { color: var(--primary-blue); } /* Mapeado para azul */
+        .text-medical-teal { color: var(--primary-blue); }
         
         .medical-card {
             background: #0A0A0A;
@@ -96,8 +98,10 @@
 <script type="importmap">
 {
   "imports": {
-    "react/": "https://esm.sh/react@^19.2.4/",
-    "react": "https://esm.sh/react@^19.2.4",
+    "react": "https://esm.sh/react@19.0.0",
+    "react/": "https://esm.sh/react@19.0.0/",
+    "react-dom": "https://esm.sh/react-dom@19.0.0",
+    "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
     "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
   }
 }
@@ -105,5 +109,6 @@
 </head>
 <body>
     <div id="root"></div>
+    <script type="module" src="index.tsx"></script>
 </body>
 </html>
